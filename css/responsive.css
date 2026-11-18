@@ -1,0 +1,16 @@
+@media (max-width:900px){
+  .layout{flex-direction:column;align-items:center;padding:8px}
+  .panel{width:min(92vw,640px)}
+  .board-root{width:min(94vw,64vh)}
+}
+@media (max-width:480px){
+  .top h1{font-size:1.4rem}.top p{font-size:.8rem}
+  .status{font-size:1.05rem}
+  .seg button{font-size:.85rem}
+}
+@media (max-height:600px) and (orientation:landscape){
+  .board-root{width:min(60vh,80vw)}
+}
+@media (prefers-reduced-motion:reduce){
+  .pawn{transition:none}.cell.target::after{animation:none}
+}
